@@ -26,9 +26,9 @@
 
 // Un commentaire sur une ligne en Javascript
 
-/* 
+/*
     Un commentaire multiligne
-    en Javascript 
+    en Javascript
 */
 
 /* --------------------------- 01 - AFFICHAGE --------------------------- */
@@ -101,14 +101,14 @@ console.log(`Bonjour, je m'appelle ${firstName} ${lastName}`);
 let string2 = 'Je suis du texte';
 
 // Number (Tous les types d'ecritures numériques sont possibles : positif, negatif, decimal)
-let nombre = 18;    //number
-let decimal = 20.3;  //number
-let negatif = -10;   //number
+let nombre = 18; //number
+let decimal = 20.3; //number
+let negatif = -10; //number
 
 // Boolean (Booléens)
 // Variable de type booleen n'a que 2 valeurs possibles : TRUE ou FALSE
-let booleen = true;   //boolean
-let booleen2 = false;  //boolean
+let booleen = true; //boolean
+let booleen2 = false; //boolean
 
 let nul = null; //null
 
@@ -219,8 +219,8 @@ if (condition >= 18 || (permis == true && test === 'toto')) {
 /* --------------------------- 08 - CONDITION SWITCH --------------------------- */
 
 /*
-    L'instruction switch évalue une expression et 
-    selon le résultat obtenu et le cas associé, 
+    L'instruction switch évalue une expression et
+    selon le résultat obtenu et le cas associé,
     exécute les instructions correspondantes.
  */
 
@@ -896,4 +896,3 @@ console.log(window.screen.colorDepth);
 // La propriété `window.screen.orientation.unlock()` permet de déverrouiller l'orientation de l'écran
 
 // creer une fonction qui permet de verifier si la fenetre est ouverte ou fermée
-

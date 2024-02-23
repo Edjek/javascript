@@ -40,6 +40,13 @@ function searchGithub(e) {
     const account = gitHubForm.elements[0].value;
     fetch(`https://api.github.com/users/${account}`)
         .then((data) => data.json())
-        .then((jsonData) => (gitHubResult.innerHTML = `<pre><code>${JSON.stringify(jsonData, null, 4)}</pre></code>`))
+        .then(
+            (jsonData) =>
+                (gitHubResult.innerHTML = `<pre><code>${JSON.stringify(
+                    jsonData,
+                    null,
+                    4
+                )}</pre></code>`)
+        )
         .catch((err) => console.log(err));
 }
