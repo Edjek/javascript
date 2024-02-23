@@ -7,7 +7,6 @@
 body {
     color: #333;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
 }
 
 h1 {
@@ -29,8 +28,8 @@ ul {
     list-style: none;
 }
 
-input[type="text"] {
-    width: 60%;
+input[type='text'] {
+    width: 80%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
