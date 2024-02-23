@@ -12,7 +12,7 @@
         ._________________.
         | _______________ |
         | I             I |
-        | I javascript  I |
+        | I Javascript  I |
         | I    Algo     I |
         | I             I |
         | I_____________I |
