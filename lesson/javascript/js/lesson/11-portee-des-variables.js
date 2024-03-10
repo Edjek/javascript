@@ -20,7 +20,7 @@ function scope() {
     console.log(x); // affiche 10
 }
 // console.log(x);
-// génère une erreur : x n'est pas défini dans le scope global
+// Génère une erreur : x n'est pas défini dans le scope global
 
 /*
     PORTEE DE BLOCK
