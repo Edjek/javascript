@@ -1,14 +1,10 @@
-const btnJob = document.getElementById('btn-job');
-const gitHubForm = document.getElementById('github-form');
-const gitHubResult = document.getElementById('github-result');
+const applyJob = document.querySelector('#btn-job');
 const candidat = {
-    isProgrammer: false,
+    isProgrammer: true,
     isCool: true,
 };
 
-btnJob.addEventListener('click', applyToJob);
-
-async function applyToJob() {
+applyJob.addEventListener('click', async function () {
     console.log('la decision est en cours...');
     try {
         const result = await startDecisionProcess();
@@ -16,11 +12,10 @@ async function applyToJob() {
     } catch (error) {
         console.log(error);
     }
-}
+});
 
 function startDecisionProcess() {
     return new Promise((resolve, reject) => {
-        console.log("Recruteur - je reçois d'autres candidats");
         setTimeout(() => {
             if (candidat.isProgrammer && candidat.isCool) {
                 resolve('Recruteur - Bienvenue dans notre entreprise');
@@ -28,16 +23,19 @@ function startDecisionProcess() {
                 reject('Recruteur - désolé vous avez échoué');
             }
         }, 2000);
+        console.log("Recruteur - je reçois d'autres candidats");
     });
 }
 
 console.log('Après la function applyToJob');
 
-gitHubForm.addEventListener('submit', searchGithub);
+// Github API
+const gitHubForm = document.querySelector('#github-form');
+const gitHubResult = document.querySelector('#github-result');
 
-function searchGithub(e) {
+gitHubForm.addEventListener('submit', function (e) {
     e.preventDefault();
-    const account = gitHubForm.elements[0].value;
+    const account = document.querySelector('#account').value;
     fetch(`https://api.github.com/users/${account}`)
         .then((data) => data.json())
         .then(
@@ -49,4 +47,4 @@ function searchGithub(e) {
                 )}</pre></code>`)
         )
         .catch((err) => console.log(err));
-}
+});
