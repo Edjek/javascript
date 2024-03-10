@@ -1,7 +1,0 @@
-https://formation.webdevpro.net/js-initiation
-login js
-password : initiation
-
-https://formation.webdevpro.net/js-dom
-login js
-password : web
