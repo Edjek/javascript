@@ -1,7 +1,7 @@
 /* --------------------------- CONDITION SWITCH --------------------------- */
 
 /*
-    L'instruction switch permet de réaliser des instructions 
+    L'instruction switch permet de réaliser des instructions
     en fonction des differentes valeurs prises par une variable
     L’instruction switch représente une alternative à l’utilisation d’un if…else if…else
  */

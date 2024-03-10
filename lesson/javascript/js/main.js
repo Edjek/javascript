@@ -1,28 +1,28 @@
 /*
-    --00-- COMMENTAIRES
-    --01-- AFFICHAGE
+    --00-- COMMENTS
+    --01-- DISPLAY
     --02-- VARIABLES
     --03-- CONCATENATION
-    --04-- TYPES DE DONNEES
-    --05-- OPERATEURS ARITHMETIQUES
-    --06-- CONDITIONS
-    --07-- OPERATEURS
+    --04-- PRIMITIVE DATA TYPES
+    --05-- ARITHMETIC OPERATORS
+    --06-- CONDITIONAL STATEMENTS
+    --07-- COMPARISON OPERATORS
     --08-- SWITCH
-    --09-- BOUCLES
-    --10-- FONCTIONS
-    --11-- PORTÉE DES VARIABLES
-    --12-- TABLEAUX
-    --13-- FONCTIONS TABLEAUX
-    --14-- FONCTIONS PREDEFINIES
-    --15-- OBJETS
+    --09-- LOOPS
+    --10-- FUNCTIONS
+    --11-- SCOPE
+    --12-- ARRAYS
+    --13-- ARRAY FUNCTIONS
+    --14-- BUIT-IN FUNCTIONS
+    --15-- OBJECTS
     --16-- CALLBACK
-    --17-- FONCTIONS AVANCEES
-    --18-- MANIPULATION DU DOM
-    --19-- EVENT
+    --17-- ADVANCED FUNCTIONS
+    --18-- DOM MANIPULATION
+    --19-- EVENTS
     --20-- WINDOW
 */
 
-/* --------------------------- 00 - COMMENTAIRES --------------------------- */
+/* --------------------------- 00 - COMMENTS --------------------------- */
 
 // Un commentaire sur une ligne en Javascript
 
@@ -31,7 +31,7 @@
     en Javascript
 */
 
-/* --------------------------- 01 - AFFICHAGE --------------------------- */
+/* --------------------------- 01 - DISPLAY --------------------------- */
 
 // Afficher des informations dans la console de debbugage du navigateur
 console.log('Hello World!');
@@ -40,7 +40,7 @@ console.log('Hello World!');
 // prompt('Quel age avez-vous ?');
 
 // On peut récupérer ce qui est tapé en affectant prompt() à une variable.
-// let message = prompt('Que voulezme dire ?')
+// let message = prompt('Que voulez-vous me dire ?')
 
 // Afficher des informations dans un pop-up
 // alert('Hello, World!')
@@ -95,7 +95,7 @@ console.log("Bonjour, je m'appelle " + firstName + ' ' + lastName);
 console.log("Bonjour, je m'appelle " + firstName + ' ' + lastName);
 console.log(`Bonjour, je m'appelle ${firstName} ${lastName}`);
 
-/* --------------------------- 04 - TYPES DE DONNEES PRIMITIFS --------------------------- */
+/* --------------------------- 04 - PRIMITIVE DATA TYPES --------------------------- */
 
 // String (Chaine de cactères)
 let string2 = 'Je suis du texte';
@@ -123,7 +123,7 @@ console.log(typeof booleen2);
 console.log(typeof nul);
 console.log(typeof test);
 
-/* --------------------------- 05 - OPERATEURS ARITHMETIQUE --------------------------- */
+/* --------------------------- 05 - ARITHMETIC OPERATORS --------------------------- */
 
 // +, -, *, /, %, **
 
@@ -151,7 +151,7 @@ let number2 = prompt('Donnez-moi un deuxieme nombre ?');
 let result = number * number2;
 console.log(`le resultat de la multiplication est ${result}`);
 
-/* --------------------------- 06 - INSTRUCTION CONDITIONNELLES --------------------------- */
+/* --------------------------- 06 - CONDITIONNAL STATEMENTS --------------------------- */
 // Les opérateurs de comparaison (==, ===, !==, !=, >, >=, <, <=)
 
 let condition = 17;
@@ -183,7 +183,7 @@ if (condition == 17) {
     console.log('Houston, nous avons un problème');
 }
 
-/* --------------------------- 07 - OPERATEURS DE COMPARAISON --------------------------- */
+/* --------------------------- 07 - COMPARISON OPERATORS --------------------------- */
 
 // Les opérateurs de comparaison (==, ===, !=, !==, >, >=, <, <=)
 // === verifie à la fois la valeur et le type des valeurs comparées (opérandes)
@@ -216,7 +216,7 @@ if (condition >= 18 || (permis == true && test === 'toto')) {
     console.log('Houston, nous avons 2 problèmes');
 }
 
-/* --------------------------- 08 - CONDITION SWITCH --------------------------- */
+/* --------------------------- 08 - SWITCH --------------------------- */
 
 /*
     L'instruction switch évalue une expression et
@@ -244,8 +244,9 @@ switch (expr) {
         console.log('je ne connais pas ce fruit');
         break;
 }
+// Si je ne mets pas de break, le code continue à s'exécuter
 
-/* --------------------------- 09 - BOUCLES --------------------------- */
+/* --------------------------- 09 - LOOPS --------------------------- */
 
 //Les boucles sont des structures permettant d'executer plusieurs fois  des instructions.
 
@@ -282,7 +283,6 @@ for (let i = 0; i < 10; i++) {
         `${res} la table de multiplication de ${combien} : ${combien} * ${i} = ${res}`
     );
 }
-
 console.log(res);
 
 /* --------------------------- 10 - FONCTIONS --------------------------- */
@@ -410,7 +410,7 @@ let notes = [
 // Pour acceder à un valeur bien penser à cibler l'index dans l'index
 console.log(notes[0][1]);
 
-/* --------------------------- 13 - FONCTIONS TABLEAUX --------------------------- */
+/* --------------------------- 13 - ARRAY FUNCTIONS --------------------------- */
 
 // ? Attention la plupart des methodes modifient le tableau de départ
 
@@ -460,7 +460,7 @@ let vegetables = ['patate douce', 'carotte', 'celeri'];
 const food = fruits.concat(vegetables);
 console.log(`2 tableaux concaténés : ${food}`);
 
-/* --------------------------- 14 - FONCTIONS PREDEFINIES --------------------------- */
+/* --------------------------- 14 - BUIT-IN FUNCTIONS --------------------------- */
 
 const message = 'je suis un bout de texte';
 
@@ -483,7 +483,7 @@ console.log(entier); // affiche 42 dans la console
 const prix = parseFloat('3.99');
 console.log(prix); // affiche 3.99 dans la console
 
-/* --------------------------- 15 - Objets --------------------------- */
+/* --------------------------- 15 - OBJECTS --------------------------- */
 
 // Les objets sont des structures de données complexes qui permettent de stocker des valeurs et des fonctions ensemble.
 
@@ -573,7 +573,7 @@ console.log(calcul);
 
 mathematique(12, 13, multiply);
 
-/* --------------------------- 17 - FONCTIONS AVANCEES --------------------------- */
+/* --------------------------- 17 - ADVANCED FUNCTIONS --------------------------- */
 
 /*
     Array
@@ -620,7 +620,7 @@ forEach(pets, function (animal) {
     console.log(animal);
 });
 
-/* --------------------------- 18 - Manipulation du DOM --------------------------- */
+/* --------------------------- 18 - DOM MANIPULATION --------------------------- */
 
 /*  -------------------------------------------
     Methodes de selecteurs JavaScript
@@ -633,7 +633,7 @@ elementById.style.color = 'red';
 
 /*
     ? La methode getElementsByTagName()
-    getElementsByClassName renvoi une HTMLCollection 
+    getElementsByClassName renvoi une HTMLCollection
     sur laquelle on pourra itérer avec la boucle for()
 */
 const elementByTagName = document.getElementsByTagName('p');
@@ -727,11 +727,11 @@ link.href = 'https://www.google.com';
 const input = document.querySelector('input');
 input.value = 'Je suis un input modifié en javascript';
 
-/* --------------------------- 19 - EVENT --------------------------- */
+/* --------------------------- 19 - EVENTS --------------------------- */
 
 /*  ---------------------------------------------
     Evénements en JavaScript
-    ---------------------------------------------   
+    ---------------------------------------------
     La méthode addEventListener() permet de définir un écouteur d'événement sur un élément HTML.
     Cet écouteur est appelé chaque fois que l'événement spécifié se produit sur l'élément.
     ---------------------------------------------
@@ -748,14 +748,6 @@ subTitle.addEventListener('click', function () {
     }
 });
 
-// subTitle.addEventListener('click', function () {
-//     if(!subTitle.classList.contains('active')){
-//         subTitle.classList.add('active')
-//     } else {
-//         subTitle.classList.remove('active')
-//     }
-// });
-
 subTitle.addEventListener('click', function () {
     subTitle.classList.toggle('active');
 });
@@ -763,9 +755,9 @@ subTitle.addEventListener('click', function () {
 /* --------------------------- 20 - WINDOW --------------------------- */
 
 /*
-    Le DOM (Document Object Model) en JavaScript 
+    Le DOM (Document Object Model) en JavaScript
     est une représentation en mémoire d'un document HTML chargé dans un navigateur.
-    Le DOM représente chaque élément du document comme un objet JavaScript 
+    Le DOM représente chaque élément du document comme un objet JavaScript
     qui peut être manipulé et modifié à travers le code JavaScript.
 */
 
@@ -884,15 +876,3 @@ console.log(window.screen.width);
 
 // La propriété `window.screen.colorDepth` permet de récupérer la profondeur de couleur de l'écran
 console.log(window.screen.colorDepth);
-
-// La propriété `window.screen.orientation` permet de récupérer l'orientation de l'écran
-
-// La propriété `window.screen.orientation.angle` permet de récupérer l'angle de l'orientation de l'écran
-
-// La propriété `window.screen.orientation.type` permet de récupérer le type de l'orientation de l'écran
-
-// La propriété `window.screen.orientation.lock()` permet de verrouiller l'orientation de l'écran
-
-// La propriété `window.screen.orientation.unlock()` permet de déverrouiller l'orientation de l'écran
-
-// creer une fonction qui permet de verifier si la fenetre est ouverte ou fermée
