@@ -15,7 +15,7 @@ Module 3 : Les tableaux et les objets
 
     Les tableaux et leur utilisation en JavaScript
     Les objets et leur manipulation en JavaScript
-    Les prototypes et l'héritage en JavaScript  
+    Les prototypes et l'héritage en JavaScript
 
 Module 4 : Manipulation du DOM et gestion des formulaires
 
