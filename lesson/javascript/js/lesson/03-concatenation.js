@@ -1,15 +1,25 @@
 /* --------------------------- CONCATENATION --------------------------- */
 
-// Concaténation (Afficher du texte et des variables)
-let age = 18;
-console.log("J'ai " + age + ' ans');
-console.log('J\'ai ' + age + ' ans');
-console.log(`J'ai ${age} ans`);
+// CONCATENATION : afficher du texte et des variables
+// declarer des variables
+// age, prenom, nom de famille, adresse, formation, organisme
 
-let lastName = 'Rachid';
-let firstName = 'EDJEKOUANE';
+// recuperer dans une variable le message
+// Je m'appelle NOM PRENOM, j'ai AGE ans et j'habite ADRESSE, je suis en formation FORMATION à ORGANISME
 
-// 3 manières de concaténer du texte et des variables
-console.log("Bonjour, je m'appelle " + firstName + ' ' + lastName);
-console.log('Bonjour, je m\'appelle ' + firstName + ' ' + lastName);
-console.log(`Bonjour, je m'appelle ${firstName} ${lastName}`);
+// 3 façons '', "", ``
+const age          = 40;
+const firstName    = 'rachid';
+const lastName     = 'EDJEKOUANE';
+const address      = '105 quai de Jemmapes 75010 PARIS';
+const formation    = 'Dev WEB';
+const organisation = 'DORANCO';
+
+let information = "Je m'appelle " + firstName + ' ' + lastName + ", j'ai " + age + " ans et j'habite " + address + ", je suis en formation " + formation + " à " + organisation;
+
+information = 'Je m\'appelle ' + firstName + ' ' + lastName + ', j\'ai ' + age + ' ans et j\'habite ' + address + ', je suis en formation ' + formation + ' à ' + organisation;
+
+// template literals (ou litteraux de gabarits) permet l'interpolation (interpretation de javascript au sein d'une chaine de caractère)
+information = `Je m'appelle ${firstName} ${lastName}, j'ai ${age} ans et j'habite ${address}, je suis en formation ${formation} à ${organisation}`
+
+console.log(information);

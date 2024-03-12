@@ -1,4 +1,4 @@
-/* --------------------------- PORTEE DES VARIABLES --------------------------- */
+/* --------------------------- SCOPE --------------------------- */
 
 // La portée (scope) d'un objet est la portion de code dans laquelle une variable est accessible.
 
@@ -12,7 +12,7 @@ const globale = 'je suis une variable globale';
 
 /*
     PORTEE LOCALE
-    La portée d'une variable déclarée à l'intérieur d'une fonction est limitée à cette fonction.
+    La portée d'une variable déclarée à l'intérieur d'une fonction ou d'un bloc est limitée à cette fonction ou ce bloc.
     Cela signifie que la variable ne sera pas accessible en dehors de cette fonction.
 */
 function scope() {
