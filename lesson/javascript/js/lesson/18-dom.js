@@ -53,8 +53,8 @@ elementWithQuerySelectorAll.forEach((toto) => (toto.style.fontWeight = 'bold'));
 /*  ---------------------------------------------
     Quelques proprietes liées aux éléments du DOM
     ---------------------------------------------
-    En JavaScript, il existe plusieurs propriétés 
-    pour accéder et modifier les éléments HTML sélectionnés dans le DOM. 
+    En JavaScript, il existe plusieurs propriétés
+    pour accéder et modifier les éléments HTML sélectionnés dans le DOM.
     Voici quelques-unes des propriétés les plus couramment utilisées :
 
 */

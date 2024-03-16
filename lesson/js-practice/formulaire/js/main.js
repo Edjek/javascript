@@ -2,7 +2,7 @@ const form = document.querySelector('#form')
 
 form.addEventListener('submit', function (e) {
     e.preventDefault()
-    const success = verifyForm()
+    const success = checkValidity()
     if (success) {
         setMessageSucces()
         // form.submit()
@@ -11,7 +11,7 @@ form.addEventListener('submit', function (e) {
     }
 })
 
-function verifyForm() {
+function checkValidity() {
     const name            = document.querySelector('#name')
     const email           = document.querySelector('#email')
     const password        = document.querySelector('#password')

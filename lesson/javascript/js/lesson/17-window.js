@@ -1,4 +1,4 @@
-/* --------------------------- 20 - WINDOW --------------------------- */
+/* --------------------------- WINDOW --------------------------- */
 
 /*
     Le DOM (Document Object Model) en JavaScript
@@ -8,8 +8,12 @@
 */
 
 /*
-    L'objet window en JavaScript est un objet global qui représente la fenêtre du navigateur.
+    L'objet window en Javascript est un objet global qui represente la fenêtre du navigateur
     Cet objet est créé automatiquement lorsque la page Web est chargée
+*/
+
+/*
+    L'objet window est objet important en Javascript car il fournit une interface entre le code Javascript et la fenetre du navigateur
 */
 
 console.log(window);

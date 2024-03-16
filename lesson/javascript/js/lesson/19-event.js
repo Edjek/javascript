@@ -2,7 +2,7 @@
 
 /*  ---------------------------------------------
     Evénements en JavaScript
-    ---------------------------------------------   
+    ---------------------------------------------
     La méthode addEventListener() permet de définir un écouteur d'événement sur un élément HTML.
     Cet écouteur est appelé chaque fois que l'événement spécifié se produit sur l'élément.
     ---------------------------------------------
