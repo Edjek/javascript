@@ -1,4 +1,4 @@
-/* --------------------------- 14 - FONCTIONS PREDEFINIES --------------------------- */
+/* --------------------------- NATIVE FUNCTIONS --------------------------- */
 
 const message = 'je suis un bout de texte';
 

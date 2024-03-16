@@ -1,6 +1,5 @@
 /* --------------------------- COMMENTS --------------------------- */
 
-
 // ? Un commentaire sur une ligne en Javascript
 
 /*

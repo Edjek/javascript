@@ -1,4 +1,4 @@
-/* --------------------------- 18 - Manipulation du DOM --------------------------- */
+/* --------------------------- DOM --------------------------- */
 
 /*  -------------------------------------------
     Methodes de selecteurs JavaScript
@@ -11,7 +11,7 @@ elementById.style.color = 'red';
 
 /*
     ? La methode `getElementsByTagName()`
-    getElementsByClassName renvoi une HTMLCollection 
+    getElementsByClassName renvoi une HTMLCollection
     sur laquelle on pourra itérer avec la boucle for()
 */
 const elementByTagName = document.getElementsByTagName('p');

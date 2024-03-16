@@ -34,27 +34,25 @@ console.log('Bonjour, je suis un message affiché dans la console');
 // Creer une variable qui contient un message de bienvenue
 // 'Bonjour, je suis une variable qui contient un message de bienvenue'
 // Afficher le message de bienvenue dans la console
-const message = 'Bonjour, je suis une variable qui contient un message de bienvenue'
+const message =
+    'Bonjour, je suis une variable qui contient un message de bienvenue';
 console.log(message);
-
 
 // Creer une variable qui contient un message
 // 'Je decouvre le javascript'
 // Concatener les deux variables et afficher le resultat dans la console
-const discover = 'Je decouvre le javascript'
+const discover = 'Je decouvre le javascript';
 console.log(`${message}, ${discover}`);
 
 // Creer une variable qui contient votre prenom
 // Afficher la console le message suivant avec la variable qui contient votre prenom
 // 'Bonjour, je m'appelle XXXX'
-const userName = 'Rachid'
-
+const userName = 'Rachid';
 
 // Afficher le message avec les 3 facons de faire une concaténation
 console.log("Bonjour, je m'appelle " + userName);
-console.log('Bonjour, je m\'appelle ' + userName);
+console.log("Bonjour, je m'appelle " + userName);
 console.log(`Bonjour, je m'appelle ${userName}`);
-
 
 // ---------------------------------- Partie 2 ----------------------------------
 
@@ -62,33 +60,38 @@ console.log(`Bonjour, je m'appelle ${userName}`);
 // 'Bonjour, je suis une fonction qui affiche un message de bienvenue dans la console'
 // Appeler la fonction
 function showMessage() {
-    console.log('Bonjour, je suis une fonction qui affiche un message de bienvenue dans la console');
+    console.log(
+        'Bonjour, je suis une fonction qui affiche un message de bienvenue dans la console'
+    );
 }
-showMessage()
+showMessage();
 
 // Creer une fonction qui affiche un message de bienvenue dans la console et qui prend en parametre un nom
 // 'Bonjour XXXX, je suis une fonction qui affiche un message de bienvenue dans la console et qui prend un parametre'
 // Appeler la fonction en lui passant votre prenom en parametre
 const showMessageWithParameter = function (name) {
-    console.log(`Bonjour ${name}, je suis une fonction qui affiche un message de bienvenue dans la console et qui prend un parametre`);
-}
-showMessageWithParameter('rachid')
+    console.log(
+        `Bonjour ${name}, je suis une fonction qui affiche un message de bienvenue dans la console et qui prend un parametre`
+    );
+};
+showMessageWithParameter('rachid');
 
 // Creer une fonction qui affiche un message de bienvenue dans la console et qui prend en parametre un nom et un age
 // 'Bonjour XXXX, vous avez XXXX ans, je suis une fonction qui affiche un message de bienvenue dans la console et qui prend deux parametres'
 // Appeler la fonction en lui passant votre prenom et votre age en parametre
 const showMessageWithTwoParameter = (name, age) => {
-    console.log(`Bonjour ${name}, vous avez ${age} ans, je suis une fonction qui affiche un message de bienvenue dans la console et qui prend deux parametres, à plus tard ${name}`);
-}
-showMessageWithTwoParameter('Rachid', '38')
-
+    console.log(
+        `Bonjour ${name}, vous avez ${age} ans, je suis une fonction qui affiche un message de bienvenue dans la console et qui prend deux parametres, à plus tard ${name}`
+    );
+};
+showMessageWithTwoParameter('Rachid', '38');
 
 // ---------------------------------- Partie 3 ----------------------------------
 
 // Déclarer une variable qui contient votre age
 // Si vous avez plus de 18 ans afficher dans la console 'Vous êtes majeur'
 // Sinon afficher dans la console 'Vous êtes mineur'
-const age = 39
+const age = 39;
 
 if (age >= 18) {
     console.log('Vous êtes majeur');
@@ -99,21 +102,20 @@ if (age >= 18) {
 // Déclarer une fonction qui prend en parametre un age
 // Et qui affiche dans la console si l'utilisateur est majeur ou mineur
 function checkAge(age) {
-
     if (age >= 18) {
         console.log('Vous êtes majeur');
     } else {
         console.log('Vous êtes mineur');
     }
 }
-checkAge(12)
+checkAge(12);
 
 // Transformer la fonction pour retourner true si l'utilisateur est majeur et false sinon
 function isLegal(age) {
     if (age >= 18) {
-        return true
+        return true;
     } else {
-        return false
+        return false;
     }
 }
 console.log(isLegal(38));
@@ -123,7 +125,7 @@ console.log(isLegal(38));
 //     Si il rentre "lion" ou "tigre" => "Vous aimez les animaux sauvages !"
 //     Si il rentre "dauphin" ou "otarie" => "Vous aimez les animaux marins !"
 //     Sinon => je ne connais pas cet animal
-const animal = 'chien'
+const animal = 'chien';
 
 if (animal == 'chat' || animal == 'chien') {
     console.log('Vous aimez les animaux domestiques !');
@@ -159,18 +161,17 @@ function checkAnimalWithSwitch(animal) {
         case 'lion':
         case 'tigre':
             console.log('Vous aimez les animaux sauvages !');
-            break
+            break;
         case 'dauphin':
         case 'otarie':
             console.log('"Vous aimez les animaux marins !');
-            break
+            break;
         default:
             console.log('je ne connais pas cet animal');
-            break
+            break;
     }
 }
-checkAnimalWithSwitch('lion')
-
+checkAnimalWithSwitch('lion');
 
 // ---------------------------------- Partie 4 ----------------------------------
 
@@ -187,7 +188,7 @@ for (let i = 1; i <= 10; i++) {
 
 // Demander à l'utilisateur de rentrer un nombre
 // Faire une boucle qui affiche dans la console les nombres de 1 à ce nombre
-const number = 34
+const number = 34;
 
 for (let i = 1; i <= number; i++) {
     console.log(i);
@@ -199,10 +200,10 @@ for (let i = 1; i <= number; i++) {
 // '5 x 1 = 5'
 // '5 x 2 = 10'
 // '5 x 3 = 15'
-const number2 = 45
+const number2 = 45;
 
 for (let i = 0; i <= 10; i++) {
-    const res = number2 * i
+    const res = number2 * i;
     console.log(`${number2} x ${i} = ${res}`);
 }
 
@@ -210,25 +211,25 @@ for (let i = 0; i <= 10; i++) {
 // Et qui affiche dans la console la table de multiplication de ce nombre
 const multiplication = (number) => {
     for (let i = 0; i <= 10; i++) {
-        const res = number * i
+        const res = number * i;
         console.log(`${number} x ${i} = ${res}`);
     }
-}
-multiplication(100)
+};
+multiplication(100);
 
 // Appeler la fonction en lui passant le nombre 5 en parametre
-multiplication(5)
+multiplication(5);
 // Appeler la fonction en lui passant le nombre 7 en parametre
-multiplication(7)
+multiplication(7);
 // Appeler la fonction en lui passant le nombre 9 en parametre
-multiplication(9)
+multiplication(9);
 
 // Demander à l'utilisateur de rentrer un nombre
 // Creer une fonction qui prend en parametre un nombre
 // Et qui affiche dans la console si le nombre est pair ou impair (modulo)
 // Appeler la fonction en lui passant le nombre 5 en parametre
 // Appeler la fonction en lui passant le nombre 256 en parametre
-const userNumber = 45
+const userNumber = 45;
 
 const isEven = (number) => {
     if (number === 10) {
@@ -236,16 +237,28 @@ const isEven = (number) => {
     } else {
         console.log('le nombre est impair');
     }
-}
+};
 // const response = prompt('Quel est nombre')
 // isEven(parseInt(response))
-
 
 // ---------------------------------- Partie 5 ----------------------------------
 
 // Déclarer un tableau contenant le nom des mois
 // Afficher dans la console le mois de janvier
-const months = ['janvier', 'fevrier', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'decembre']
+const months = [
+    'janvier',
+    'fevrier',
+    'mars',
+    'avril',
+    'mai',
+    'juin',
+    'juillet',
+    'aout',
+    'septembre',
+    'octobre',
+    'novembre',
+    'decembre',
+];
 
 // Afficher dans la console le mois de mars
 // Afficher dans la console le mois de avril
@@ -268,7 +281,7 @@ function displayMonth() {
         console.log(months[i]);
     }
 }
-displayMonth()
+displayMonth();
 
 // Déclarer une variable qui contient un nombre
 // Si le nombre est divisible par 3 afficher dans un alert 'Fizz'
@@ -283,7 +296,6 @@ if (foo % 3 == 0 && foo % 5 == 0) {
     console.log('Fizz');
 } else if (foo % 5 == 0) {
     console.log('Buzz');
-
 } else {
     console.log(foo);
 }
@@ -296,43 +308,42 @@ function fizzBuzz(number) {
         console.log('Fizz');
     } else if (number % 5 == 0) {
         console.log('Buzz');
-
     } else {
         console.log(number);
     }
 }
-fizzBuzz(300)
+fizzBuzz(300);
 
 // Algorithme de calcul de moyenne
 // Déclarer 3 variables qui contiennent les notes de l'utilisateur
 // Calculer la moyenne de l'utilisateur
-const a = 18
-const b = 12
-const c = 2
+const a = 18;
+const b = 12;
+const c = 2;
 console.log(parseInt((a + b + c) / 3));
 
 // Creer un tableau qui contient les notes de l'utilisateur [10, 15, 20]
 // Afficher dans la console la note de l'utilisateur à l'indice 1
-const userNotes = [10, 15, 20]
+const userNotes = [10, 15, 20];
 console.log(userNotes[1]);
 
 // Algorithme de calcul de moyenne avec tableau
 // Déclarer un tableau qui contient les notes de l'utilisateur [10, 15, 20]
 // Calculer la moyenne de l'utilisateur
 // Afficher dans la console la moyenne de l'utilisateur
-const notes = [15, 8, 20]
-const resultat = (notes[0] + notes[1] + notes[2]) / notes.length
+const notes = [15, 8, 20];
+const resultat = (notes[0] + notes[1] + notes[2]) / notes.length;
 console.log(resultat);
 
 // Algorithme de calcul de moyenne avec tableau et boucle
 // Déclarer un tableau qui contient les notes de l'utilisateur
 // Calculer la moyenne de l'utilisateur en faisant une boucle
 // Afficher dans la console la moyenne de l'utilisateur
-let res = 0
+let res = 0;
 for (let i = 0; i < notes.length; i++) {
-    res += notes[i]
+    res += notes[i];
 }
-res /= notes.length
+res /= notes.length;
 console.log(res);
 
 // Algorithme de calcul de moyenne avec tableau et boucle et fonction
@@ -340,11 +351,11 @@ console.log(res);
 // Déclarer une fonction qui prend en parametre un tableau, qui calcule la moyenne de l'utilisateur et qui retourne la moyenne
 // Appeler la fonction en lui passant le tableau en parametre
 function average(notes) {
-    let result = 0
+    let result = 0;
     for (let i = 0; i < notes.length; i++) {
-        result += notes[i]
+        result += notes[i];
     }
-    return result /= notes.length
+    return (result /= notes.length);
 }
 console.log(average(notes));
 
@@ -353,9 +364,9 @@ console.log(average(notes));
 // Retourner true si la moyenne est supérieure ou égale à 10 et false sinon
 function isPass(average) {
     if (average >= 10) {
-        return true
+        return true;
     } else {
-        return false
+        return false;
     }
 }
 console.log(isPass(12));
@@ -367,7 +378,7 @@ console.log(isPass(12));
 // Affiche dans la console si l'utilisateur est reçu ou non
 // Appeler la fonction en lui passant le tableau en parametre
 function graduate(notes) {
-    const moyenne = average(notes)
+    const moyenne = average(notes);
     if (isPass(moyenne) == true) {
         console.log('Vous êtes reçu');
     } else {
@@ -383,18 +394,17 @@ function graduate(notes) {
 // Si la moyenne est inférieure à 7 => mention "Insuffisant"
 function mention(note) {
     if (note >= 10) {
-        return 'Très bien'
+        return 'Très bien';
     } else if (note >= 9) {
-        return 'Bien'
+        return 'Bien';
     } else if (note >= 8) {
-        return 'Assez bien'
+        return 'Assez bien';
     } else if (note >= 7) {
-        return 'Passable'
+        return 'Passable';
     } else {
-        return 'Insuffisant'
+        return 'Insuffisant';
     }
 }
-
 
 // Déclaration d'un tableau qui contient les notes de l'utilisateur
 // Déclarer une fonction qui affiche dans la console la mention de l'utilisateur en fonction de sa moyenne
@@ -402,15 +412,15 @@ function mention(note) {
 // Afficher dans la console si l'utilisateur est reçu ou non avec la fonction que vous avez créé
 // Afficher dans la console la mention de l'utilisateur avec la fonction que vous avez créé
 const displayGraduate = (notes) => {
-    const res = parseInt(average(notes))
-    isPass(res)
-    let received = ''
+    const res = parseInt(average(notes));
+    isPass(res);
+    let received = '';
     if (isPass(res) == true) {
         console.log('vous êtes reçu');
     } else {
         console.log('vous avez échouez');
     }
-}
+};
 
 // Déclarer une fonction qui prend en parametre un tableau de notes et un nom
 // Calculer la moyenne de l'utilisateur
@@ -418,18 +428,17 @@ const displayGraduate = (notes) => {
 // Recuperer la mention de l'utilisateur
 // Afficher dans la console le nom de l'utilisateur, sa moyenne, s'il est reçu ou non et sa mention
 function isGraduate(notes, lastName) {
-    const res = parseInt(average(notes))
-    isPass(res)
-    let received = ''
+    const res = parseInt(average(notes));
+    isPass(res);
+    let received = '';
     if (isPass(res) == true) {
-        received = 'reçu'
+        received = 'reçu';
     } else {
-        received = 'recalé'
+        received = 'recalé';
     }
-    const ment = mention(res)
+    const ment = mention(res);
 
-    return `${lastName} vous avez eu une moyenne de ${res}, vous êtes ${received} avec la mention : ${ment}`
-
+    return `${lastName} vous avez eu une moyenne de ${res}, vous êtes ${received} avec la mention : ${ment}`;
 }
 console.log(isGraduate([10, 12, 16], 'Edjekouane'));
 
@@ -450,10 +459,20 @@ const car = {
     couleur: 'rouge',
     nbPortes: 5,
     nbVitesses: 5,
-    optionsList: ['climatisation', 'vitres electriques', 'gps', 'bluetooth', 'siege chauffant'],
-    description: function () { return `La voiture est une ${this.marque} ${this.modele} ${this.couleur} de ${this.nbPortes} portes et ${this.nbVitesses} vitesses` },
-    descriptionOptions: function () { return `La voiture est équipée de la ${this.optionsList[0]}, des vitres electriques, du gps, du bluetooth et des sieges chauffants` }
-}
+    optionsList: [
+        'climatisation',
+        'vitres electriques',
+        'gps',
+        'bluetooth',
+        'siege chauffant',
+    ],
+    description: function () {
+        return `La voiture est une ${this.marque} ${this.modele} ${this.couleur} de ${this.nbPortes} portes et ${this.nbVitesses} vitesses`;
+    },
+    descriptionOptions: function () {
+        return `La voiture est équipée de la ${this.optionsList[0]}, des vitres electriques, du gps, du bluetooth et des sieges chauffants`;
+    },
+};
 
 // Afficher dans la console la marque de la voiture
 console.log(car.marque);
@@ -477,7 +496,7 @@ for (let i = 0; i < car.optionsList.length; i++) {
 // A l'aide d'une boucle forEach(), afficher dans la console la liste des options de la voiture
 car.optionsList.forEach((option) => {
     console.log(option);
-})
+});
 
 // A l'aide d'une boucle for(...of...), afficher dans la console la liste des options de la voiture
 for (const option of car.optionsList) {
@@ -507,21 +526,87 @@ const person = {
     sexe: 'homme',
     animalPrefere: 'chat',
     description: function () {
-        return `Je m'appelle ${this.prenom} et j'ai ${this.age} ans et j'aime les ${this.animalPrefere}s`
+        return `Je m'appelle ${this.prenom} et j'ai ${this.age} ans et j'aime les ${this.animalPrefere}s`;
     },
-}
+};
 
 // Afficher dans la console la description de l'utilisateur
 console.log(person.description());
 
 // Voici un tableau qui contient 6 objets utilisateurs
 let users = [
-    { prenom: 'Alice', nom: 'Dupont', age: 28, sexe: 'Femme', animauxPreferes: ['chat', 'chien'], description: function () { return `Je m'appelle ${this.prenom} ${this.nom} et j'ai ${this.age} ans et j'aime les ${this.animauxPreferes.join(', ')}.`; }, },
-    { prenom: 'Bob', nom: 'Martin', age: 35, sexe: 'Homme', animauxPreferes: ['poisson', 'oiseau'], description: function () { return `Je m'appelle ${this.prenom} ${this.nom} et j'ai ${this.age} ans et j'aime les ${this.animauxPreferes.join(', ')}.`; }, },
-    { prenom: 'Claire', nom: 'Rousseau', age: 42, sexe: 'Femme', animauxPreferes: ['cheval', 'lapin'], description: function () { return `Je m'appelle ${this.prenom} ${this.nom} et j'ai ${this.age} ans et j'aime les ${this.animauxPreferes.join(', ')}.`; }, },
-    { prenom: 'David', nom: 'Lefebvre', age: 22, sexe: 'Homme', animauxPreferes: ['chat', 'chien'], description: function () { return `Je m'appelle ${this.prenom} ${this.nom} et j'ai ${this.age} ans et j'aime les ${this.animauxPreferes.join(', ')}.`; }, },
-    { prenom: 'Emma', nom: 'Garcia', age: 29, sexe: 'Femme', animauxPreferes: ['chien', 'hamster'], description: function () { return `Je m'appelle ${this.prenom} ${this.nom} et j'ai ${this.age} ans et j'aime les ${this.animauxPreferes.join(', ')}.`; }, },
-    { prenom: 'François', nom: 'Moreau', age: 46, sexe: 'Homme', animauxPreferes: ['chat', 'oiseau'], description: function () { return `Je m'appelle ${this.prenom} ${this.nom} et j'ai ${this.age} ans et j'aime les ${this.animauxPreferes.join(', ')}.`; }, },
+    {
+        prenom: 'Alice',
+        nom: 'Dupont',
+        age: 28,
+        sexe: 'Femme',
+        animauxPreferes: ['chat', 'chien'],
+        description: function () {
+            return `Je m'appelle ${this.prenom} ${this.nom} et j'ai ${
+                this.age
+            } ans et j'aime les ${this.animauxPreferes.join(', ')}.`;
+        },
+    },
+    {
+        prenom: 'Bob',
+        nom: 'Martin',
+        age: 35,
+        sexe: 'Homme',
+        animauxPreferes: ['poisson', 'oiseau'],
+        description: function () {
+            return `Je m'appelle ${this.prenom} ${this.nom} et j'ai ${
+                this.age
+            } ans et j'aime les ${this.animauxPreferes.join(', ')}.`;
+        },
+    },
+    {
+        prenom: 'Claire',
+        nom: 'Rousseau',
+        age: 42,
+        sexe: 'Femme',
+        animauxPreferes: ['cheval', 'lapin'],
+        description: function () {
+            return `Je m'appelle ${this.prenom} ${this.nom} et j'ai ${
+                this.age
+            } ans et j'aime les ${this.animauxPreferes.join(', ')}.`;
+        },
+    },
+    {
+        prenom: 'David',
+        nom: 'Lefebvre',
+        age: 22,
+        sexe: 'Homme',
+        animauxPreferes: ['chat', 'chien'],
+        description: function () {
+            return `Je m'appelle ${this.prenom} ${this.nom} et j'ai ${
+                this.age
+            } ans et j'aime les ${this.animauxPreferes.join(', ')}.`;
+        },
+    },
+    {
+        prenom: 'Emma',
+        nom: 'Garcia',
+        age: 29,
+        sexe: 'Femme',
+        animauxPreferes: ['chien', 'hamster'],
+        description: function () {
+            return `Je m'appelle ${this.prenom} ${this.nom} et j'ai ${
+                this.age
+            } ans et j'aime les ${this.animauxPreferes.join(', ')}.`;
+        },
+    },
+    {
+        prenom: 'François',
+        nom: 'Moreau',
+        age: 46,
+        sexe: 'Homme',
+        animauxPreferes: ['chat', 'oiseau'],
+        description: function () {
+            return `Je m'appelle ${this.prenom} ${this.nom} et j'ai ${
+                this.age
+            } ans et j'aime les ${this.animauxPreferes.join(', ')}.`;
+        },
+    },
 ];
 
 // Faire une boucle sur le tableau users
@@ -535,7 +620,7 @@ for (let i = 0; i < users.length; i++) {
 // Utiliser la méthode forEach()
 users.forEach((user) => {
     console.log(user.description());
-})
+});
 
 // Utiliser la méthode for(...of...)
 for (const user of users) {
@@ -548,26 +633,101 @@ users.forEach((user) => {
     for (const key in user) {
         console.log(`${key} : ${user[key]}`);
     }
-})
+});
 
 // ---------------------------------- Partie 7 ----------------------------------
 
 const students = [
-    { nom: "Dupont", prenom: "Alice", cours: ["Maths", "Anglais", "Histoire"], notes: [14, 16, 18] },
-    { nom: "Martin", prenom: "Bob", cours: ["Physique", "Espagnol", "Géographie"], notes: [12, 13, 15] },
-    { nom: "Lefebvre", prenom: "Claire", cours: ["Chimie", "Allemand", "SVT"], notes: [9, 10, 11] },
-    { nom: "Girard", prenom: "David", cours: ["Français", "Arts plastiques", "Philosophie"], notes: [17, 19, 14] },
-    { nom: "Petit", prenom: "Emma", cours: ["Latin", "Musique", "Sciences économiques"], notes: [16, 11, 12] },
-    { nom: "Moreau", prenom: "François", cours: ["Sport", "Théâtre", "Informatique"], notes: [11, 13, 15] },
-    { nom: "Dubois", prenom: "Marc", cours: ["Géométrie", "Latin", "Marketing"], notes: [15, 12, 10] },
-    { nom: "Garcia", prenom: "Hugo", cours: ["Littérature", "Musique", "Droit"], notes: [14, 17, 18] },
-    { nom: "Roux", prenom: "Inès", cours: ["Sociologie", "Japonais", "Chimie"], notes: [10, 9, 12] },
-    { nom: "Berger", prenom: "Jules", cours: ["Géographie", "Théâtre", "Espagnol"], notes: [13, 16, 14] },
-    { nom: "Moulin", prenom: "Karine", cours: ["Histoire de l'art", "Anglais", "Physique"], notes: [17, 15, 18] },
-    { nom: "David", prenom: "Lucie", cours: ["Chinois", "Marketing", "SVT"], notes: [12, 11, 9] },
-    { nom: "Mercier", prenom: "Marc", cours: ["Philosophie", "Sport", "Français"], notes: [18, 13, 16] },
-    { nom: "Fournier", prenom: "Nina", cours: ["Informatique", "Littérature", "Musique"], notes: [15, 14, 17] },
-    { nom: "Morel", prenom: "Olivier", cours: ["Espagnol", "Chimie", "Théâtre"], notes: [13, 11, 16] }
+    {
+        nom: 'Dupont',
+        prenom: 'Alice',
+        cours: ['Maths', 'Anglais', 'Histoire'],
+        notes: [14, 16, 18],
+    },
+    {
+        nom: 'Martin',
+        prenom: 'Bob',
+        cours: ['Physique', 'Espagnol', 'Géographie'],
+        notes: [12, 13, 15],
+    },
+    {
+        nom: 'Lefebvre',
+        prenom: 'Claire',
+        cours: ['Chimie', 'Allemand', 'SVT'],
+        notes: [9, 10, 11],
+    },
+    {
+        nom: 'Girard',
+        prenom: 'David',
+        cours: ['Français', 'Arts plastiques', 'Philosophie'],
+        notes: [17, 19, 14],
+    },
+    {
+        nom: 'Petit',
+        prenom: 'Emma',
+        cours: ['Latin', 'Musique', 'Sciences économiques'],
+        notes: [16, 11, 12],
+    },
+    {
+        nom: 'Moreau',
+        prenom: 'François',
+        cours: ['Sport', 'Théâtre', 'Informatique'],
+        notes: [11, 13, 15],
+    },
+    {
+        nom: 'Dubois',
+        prenom: 'Marc',
+        cours: ['Géométrie', 'Latin', 'Marketing'],
+        notes: [15, 12, 10],
+    },
+    {
+        nom: 'Garcia',
+        prenom: 'Hugo',
+        cours: ['Littérature', 'Musique', 'Droit'],
+        notes: [14, 17, 18],
+    },
+    {
+        nom: 'Roux',
+        prenom: 'Inès',
+        cours: ['Sociologie', 'Japonais', 'Chimie'],
+        notes: [10, 9, 12],
+    },
+    {
+        nom: 'Berger',
+        prenom: 'Jules',
+        cours: ['Géographie', 'Théâtre', 'Espagnol'],
+        notes: [13, 16, 14],
+    },
+    {
+        nom: 'Moulin',
+        prenom: 'Karine',
+        cours: ["Histoire de l'art", 'Anglais', 'Physique'],
+        notes: [17, 15, 18],
+    },
+    {
+        nom: 'David',
+        prenom: 'Lucie',
+        cours: ['Chinois', 'Marketing', 'SVT'],
+        notes: [12, 11, 9],
+    },
+    {
+        nom: 'Mercier',
+        prenom: 'Marc',
+        cours: ['Philosophie', 'Sport', 'Français'],
+        notes: [18, 13, 16],
+    },
+    {
+        nom: 'Fournier',
+        prenom: 'Nina',
+        cours: ['Informatique', 'Littérature', 'Musique'],
+        notes: [15, 14, 17],
+    },
+    {
+        nom: 'Morel',
+        prenom: 'Olivier',
+        cours: ['Espagnol', 'Chimie', 'Théâtre'],
+        notes: [13, 11, 16],
+    },
 ];
 
 // Itérer sur le tableau students avec la méthode forEach()
@@ -575,7 +735,7 @@ const students = [
 // 1. Afficher dans la console le nom et le prénom de chaque élève
 students.forEach(function (student) {
     console.log(student.nom + ' ' + student.prenom);
-})
+});
 
 // 2. Afficher dans la console le nom et le prénom de chaque élève qui sont inscrits au cours de "Français" ou "Maths"
 students.forEach(function (student) {
@@ -584,7 +744,7 @@ students.forEach(function (student) {
             console.log(student.nom);
         }
     }
-})
+});
 
 // 3. Afficher dans la console le nom et le prénom de chaque élève qui ont ete reçus (utiliser la fonction que vous avez créée dans la partie 5)
 
