@@ -1,5 +1,10 @@
-import { helloUser, firstName, default as coucou } from './hello.js'
-import { userGender, userSalary, userAugmentation, totalSalary } from './modern.js'
+import { helloUser, firstName, default as coucou } from './hello.js';
+import {
+    userGender,
+    userSalary,
+    userAugmentation,
+    totalSalary,
+} from './modern.js';
 
 helloUser(firstName);
 

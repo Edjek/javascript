@@ -78,3 +78,15 @@ function displayFruits(fruit1, fruit2, fruit3) {
 }
 const fruits4 = ['pomme', 'banane', 'orange'];
 displayFruits(...fruits4);
+
+// ? Exemple avec une fonction
+function displayPokemon({ name, type, level }) {
+    console.log(name, type, level);
+}
+const pokemon4 = { name: 'pikachu', type: 'electric', level: 25 };
+displayPokemon(pokemon4);
+
+const [fruit3, fruit2, ...otherFruits2] = fruits;
+console.log(fruit1);
+console.log(fruit2);
+console.log(otherFruits);
