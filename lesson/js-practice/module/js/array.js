@@ -1,10 +1,10 @@
 /*
-    ES6 (ECMAScript 2015) est une version importante de JavaScript 
+    ES6 (ECMAScript 2015) est une version importante de JavaScript
     introduisant de nouvelles fonctionnalités et améliorations du langage.
 
-    map(), reduce(), filter(), find(), et every() sont des méthodes de tableaux 
+    map(), reduce(), filter(), find(), et every() sont des méthodes de tableaux
     qui permettent de transformer, filtrer et rechercher des données.
-    
+
     - map() permet de transformer chaque élément d'un tableau en un nouvel élément.
     - reduce() permet de réduire les éléments d'un tableau en une seule valeur.
     - filter() permet de sélectionner les éléments d'un tableau qui répondent à un critère.
@@ -14,9 +14,9 @@
 
 let numbers = [1, 2, 3, 4, 5];
 
-// `forEach()` : Cette méthode permet d'itérer sur chaque élément d'un tableau et d'exécuter une fonction pour chaque élément. 
+// `forEach()` : Cette méthode permet d'itérer sur chaque élément d'un tableau et d'exécuter une fonction pour chaque élément.
 numbers.forEach((number) => {
-    console.log(number += 5);
+    console.log((number += 5));
 });
 console.log(numbers);
 
