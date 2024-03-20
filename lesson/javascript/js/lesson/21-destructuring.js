@@ -1,7 +1,7 @@
 /* --------------------------- DESTRUCTURING --------------------------- */
 
 /*
-    Déstructuration un tableau ou un objet signifie extraire des valeurs et les stocker dans des variables distinctes
+    Déstructurater un tableau ou un objet signifie extraire des valeurs et les stocker dans des variables distinctes.
 */
 
 // Déstructuration d'un tableau
@@ -16,7 +16,7 @@ const pokemon = {
     level: 25,
     trainer: {
         name: 'Sacha',
-        city: 'Bourg Palette',
+        city: 'paris',
     },
 };
 
