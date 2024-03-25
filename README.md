@@ -3,7 +3,7 @@
 > Durée : 7 jours (49 heures au total)
 
 <center>
-<img src="./support/contexte/logo.png" alt="javascript" width="100">
+<img src="./support/context/img/logo.png" alt="javascript" width="100">
 </center>
 
 <br>
