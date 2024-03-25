@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Js - Dom</title>
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <script src="assets/js/app.js" defer></script>
+    </head>
+    <body>
+        <section class="click-event box">
+            <h1>Quelle est la capitale de la France ?</h1>
+            <button id="btn-1">Marseille</button>
+            <button id="btn-2">Lyon</button>
+            <button id="btn-3" id="good-response">Paris</button>
+            <p id="response">La bonne réponse est Paris</p>
+        </section>
+
+        <section class="keypress-container box">
+            <h1>Vous appuyez sur la touche : <span id="key">e</span></h1>
+        </section>
+
+        <nav class="nav">
+            <ul>
+                <li>Accueil</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+
+        <form class="box form">
+            <div class="mb-3">
+                <label for="name">Nom</label>
+                <input type="text" id="name" />
+            </div>
+
+            <div class="mb-3">
+                <label for="language">Sélectionnez votre language favori</label>
+                <select id="language">
+                    <option value="php">Php</option>
+                    <option value="javascript" selected>Javascript</option>
+                    <option value="c++">C++</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <input type="checkbox" id="cgv" />
+                <label for="cgv">Accepter les CGV</label>
+            </div>
+            <div class="mb-3" id="accept-cgv"></div>
+
+            <input type="submit" />
+        </form>
+
+        <div class="mousemove"></div>
+    </body>
+</html>
