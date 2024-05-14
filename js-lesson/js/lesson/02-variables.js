@@ -6,7 +6,6 @@
 // DECLARATION de variable
 let uneVariable;
 let UNEVARIABLE;
-
 // AFFECTATION d'une variable (donne une valeur à la variable)
 uneVariable = 'je suis une variable';
 
