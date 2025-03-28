@@ -1,0 +1,42 @@
+:root {
+    --cl-text: #333;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 300vh;
+    color: var(--cl-text);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cl-text);
+}
+
+h1 {
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: 300px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.container p {
+    margin: 1rem 0;
+}

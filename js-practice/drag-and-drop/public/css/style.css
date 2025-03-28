@@ -1,0 +1,95 @@
+:root {
+    --main-bg-color: #00a2ff;
+    --title-bg-color: #fc9f35;
+    --before-bg-color: #917df9;
+    --list-bg-color: #ffbcff;
+    --item-bg-color: #fff;
+    --highlight-color: rgb(9, 203, 74);
+    --text-color: #222;
+    --border: 5px solid #222;
+    --border-radius: 2rem;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    min-height: 100vh;
+    background-color: var(--main-bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+.drag-drop-container {
+    position: relative;
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+.drag-drop-container::before {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    left: -2rem;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    background-color: var(--before-bg-color);
+}
+
+.title {
+    padding: 1rem 0;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+    border-bottom: var(--border);
+    background-color: var(--title-bg-color);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.item-list {
+    padding: 2rem;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    list-style: none;
+    background-color: var(--list-bg-color);
+}
+
+.drag-item {
+    width: 30rem;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 30rem;
+    background-color: var(--item-bg-color);
+    backdrop-filter: blur(2px);
+    border: var(--border);
+    text-align: center;
+    font-weight: 800;
+    cursor: grab;
+    transition: background-color 0.25s;
+}
+
+.drag-item.dragging {
+    opacity: 0.5;
+    cursor: grabbing;
+}
+
+.drag-item.dragover {
+    background-color: var(--highlight-color);
+}

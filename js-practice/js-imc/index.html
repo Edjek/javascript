@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calcul de votre IMC</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <script src="js/app.js" type="module" defer></script>
+    </head>
+    <body>
+        <div class="video-background">
+            <video width="320" height="240" autoplay loop muted>
+                <source src="video/bg-color.mp4" type="video/mp4" />
+                <p>Votre navigateur ne prend pas en charge les vidéos HTML5.</p>
+            </video>
+        </div>
+
+        <div class="page-container">
+            <header>
+                <h1 class="header-title">Calcul de votre IMC</h1>
+                <p>IMC = poids (kg) / (Taille (m)²)</p>
+            </header>
+
+            <main>
+                <section class="form-wrapper">
+                    <form
+                        class="bmi-calculation"
+                        id="bmi-calculation"
+                        name="bmicalculation"
+                    >
+                        <div class="form-input">
+                            <label
+                                for="height"
+                                aria-label="Taille en centimètres"
+                                >Taille (en cm)</label
+                            >
+                            <input
+                                type="text"
+                                id="height"
+                                name="height"
+                                aria-label="Entrez votre taille en centimètres"
+                                placeholder="exemple : 175"
+                                required
+                                autofocus
+                            />
+                        </div>
+                        <div class="form-input">
+                            <label
+                                for="weight"
+                                aria-label="Poids en kilogrammes"
+                                >Poids (en kg)</label
+                            >
+                            <input
+                                type="text"
+                                id="weight"
+                                name="weight"
+                                aria-label="Entrez votre poids en kilogrammes"
+                                placeholder="exemple : 75"
+                                required
+                                autofocus
+                            />
+                        </div>
+                        <input type="submit" value="Calculer" />
+                    </form>
+                </section>
+                <section class="info-wrapper">
+                    <table class="info-table">
+                        <caption>
+                            Interprétation de l'indice de masse corporelle (IMC)
+                        </caption>
+                        <tbody>
+                            <tr>
+                                <th>Inférieur à 16</th>
+                                <td>Anorexie ou dénutrition</td>
+                            </tr>
+                            <tr>
+                                <th>Entre 16.5 et 18.5</th>
+                                <td>Maigreur</td>
+                            </tr>
+                            <tr>
+                                <th>Entre 18.5 et 25</th>
+                                <td>Corpulence normale</td>
+                            </tr>
+
+                            <tr>
+                                <th>Entre 25 et 30</th>
+                                <td>Surpoids</td>
+                            </tr>
+                            <tr>
+                                <th>Entre 30 et 35</th>
+                                <td>Obésité modérée</td>
+                            </tr>
+                            <tr>
+                                <th>Entre 35 et 40</th>
+                                <td>Obésité élevé</td>
+                            </tr>
+                            <tr>
+                                <th>Supérieur à 40</th>
+                                <td>Obésite morbide ou massive</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
